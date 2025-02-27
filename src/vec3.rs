@@ -3,6 +3,7 @@ use std::{
     ops::{Add, Div, Mul, Neg, Sub},
 };
 
+#[derive(Debug, Clone, Copy)]
 pub struct Vec3 {
     pub x: f64,
     pub y: f64,
