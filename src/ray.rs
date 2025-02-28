@@ -21,6 +21,7 @@ impl Ray {
         &self.dir
     }
 
+    // P(t) = O + tD, O is the origin, D is the direction, t is the parameter
     pub fn at(&self, t: f64) -> Point3 {
         self.orig + (self.dir * t)
     }
