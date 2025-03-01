@@ -3,6 +3,7 @@ pub mod ray;
 pub mod vec3;
 pub mod hittable;
 pub mod sphere;
+pub mod hittable_list;
 
 use color::{write_color, Color};
 use ray::Ray;
