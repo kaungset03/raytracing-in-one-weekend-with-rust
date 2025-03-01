@@ -1,10 +1,12 @@
-use color::{write_color, Color};
-use ray::Ray;
-use vec3::{dot, Point3, Vec3};
-
 pub mod color;
 pub mod ray;
 pub mod vec3;
+pub mod hittable;
+pub mod sphere;
+
+use color::{write_color, Color};
+use ray::Ray;
+use vec3::{dot, Point3, Vec3};
 
 fn hit_sphere(center: &Point3, radius: f64, r: &Ray) -> f64 {
     let oc = *center - *r.origin();
